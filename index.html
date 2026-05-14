@@ -102,17 +102,14 @@
 </head>
 <body>
 
-    <!-- 在线音频直链 (使用维基共享免版权的高清音频) -->
-    <!-- 1. 温柔钢琴曲 -->
-    <audio id="bgm-warm" src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gymnop%C3%A9die_No._1.ogg" loop></audio>
-    <!-- 2. 压抑低频环境音 -->
-    <audio id="bgm-creepy" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Freesound_-_118558__Sclolex__Drone.ogg" loop></audio>
-    <!-- 3. 沉重心跳声 -->
-    <audio id="bgm-heartbeat" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Heartbeat.ogg" loop></audio>
-    <!-- 4. 打字/干扰滋滋声 -->
-    <audio id="sfx-glitch" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Static_Noise.ogg"></audio>
-    <!-- 5. 结局敲门声 -->
-    <audio id="sfx-knock" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Knocking_on_a_wooden_door.ogg"></audio>
+   <!-- 🎵 将你的音频设置为全场的唯一背景音乐 -->
+    <audio id="bgm-warm" src="warm_piano.mp3" loop></audio>
+
+    <!-- ⚠️ 下面这些保留了标签是为了防止后续代码找不到目标而报错，但去掉了 src，所以它们全程静音 -->
+    <audio id="bgm-creepy" loop></audio>
+    <audio id="bgm-heartbeat" loop></audio>
+    <audio id="sfx-glitch"></audio>
+    <audio id="sfx-knock"></audio>
 
     <div id="start-screen">
         <h2 style="color:#00e5ff; margin-bottom: 40px; font-weight: 300;">盘古终端 - 生理与心理健康评估检测</h2>
